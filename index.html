@@ -1,45 +1,354 @@
-<h1 id="privacy-policy">Privacy Policy</h1>
-<p><strong>Block Rush!</strong><br><em>Last Updated: September 2026</em></p>
-<hr>
-<h2 id="1-introduction">1. Introduction</h2>
-<p>Welcome to <strong>Block Rush!</strong>. We are dedicated to protecting your privacy and ensuring you have a safe, enjoyable, and positive experience while playing our game. This Privacy Policy explains how we handle and safeguard information when you install and play <strong>Block Rush!</strong> on your mobile device.</p>
-<p>By downloading, installing, or playing the game, you agree to the practices described in this Privacy Policy. If you do not agree with this policy, please do not use the application.</p>
-<hr>
-<h2 id="2-information-we-collect">2. Information We Collect</h2>
-<p>We respect your privacy and collect only what is strictly necessary to run the game:</p>
-<ul>
-<li><strong>No Personal Information:</strong> We do not collect names, email addresses, phone numbers, location, contacts, or photos. No account or login is required.</li>
-<li><strong>Local Storage Only:</strong> Your high scores, sound, music, and vibration settings are saved <strong>only on your device</strong>. This data is never sent to any server and is removed if you uninstall the app.</li>
-<li><strong>No In-App Purchases:</strong> The game is 100% free with no paid items, subscriptions, or financial transactions.</li>
-<li><strong>Technical &amp; Diagnostics Data:</strong> Our advertising partner (Google AdMob) may automatically process basic non-personal technical data (such as device model, OS version, and crash logs) to display ads and keep the app running reliably.</li>
-</ul>
-<hr>
-<h2 id="3-advertising-google-admob-">3. Advertising (Google AdMob)</h2>
-<p>To keep the game free, we display advertisements via <strong>Google AdMob</strong>. Because our game is designed for players aged 3 and above:</p>
-<ul>
-<li><strong>Child-Directed Treatment:</strong> All ad requests are marked as child-directed in compliance with COPPA and Google Play Families Policy.</li>
-<li><strong>G-Rated Content Only:</strong> All ads are restricted to general, family-safe audiences (<strong>MaxAdContentRating: G</strong>).</li>
-<li><strong>Non-Personalized Ads:</strong> We only serve contextual ads. We do <strong>not</strong> allow personalized ads, behavioral tracking, or user profiling.</li>
-<li><strong>No Advertising ID:</strong> We have explicitly removed the Android Advertising ID (<code>AD_ID</code>) permission from our app.</li>
-</ul>
-<p>For more information, see the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and <a href="https://support.google.com/admob/answer/6223431">Google Families Ad Policy</a>.</p>
-<hr>
-<h2 id="4-children-s-privacy">4. Children&#39;s Privacy</h2>
-<p>Protecting young players and family privacy is our top priority:</p>
-<ul>
-<li>The game is family-friendly and strictly adheres to the <strong>Children&#39;s Online Privacy Protection Act (COPPA)</strong> and the <strong>Google Play Families Policy</strong>.</li>
-<li>We do not knowingly collect any personal data from children under 13 (or any user).</li>
-<li>The game contains <strong>no chat, no social media links, and no external web links</strong>.</li>
-<li>Parents and guardians can contact us at any time with questions or to request the deletion of any data.</li>
-</ul>
-<hr>
-<h2 id="5-data-deletion">5. Data Deletion</h2>
-<p>Because all game data (scores and settings) is stored locally on your device, you can delete it at any time by clearing the app&#39;s cache/storage in your device settings or by uninstalling the app.</p>
-<hr>
-<h2 id="6-contact-us">6. Contact Us</h2>
-<p>If you have any questions or concerns about this Privacy Policy, please contact:</p>
-<ul>
-<li><strong>Email:</strong> [viveknakrani.dev@gmail.com]</li>
-</ul>
-<hr>
-<p><em>© 2026 Block Rush!. All rights reserved.</em></p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Block Rush!</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:       #ECEFFE;
+      --surface:  #FFFFFF;
+      --navy:     #1C2674;
+      --navy-dk:  #131A55;
+      --text:     #1A1B2E;
+      --muted:    #5C5F7A;
+      --c-red:    #E84855;
+      --c-amber:  #F5A623;
+      --c-teal:   #00B4A0;
+      --c-purple: #7B5EA7;
+      --c-blue:   #2C7EF8;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.75;
+      min-height: 100vh;
+    }
+
+    /* ── Header ── */
+    header {
+      background: linear-gradient(140deg, var(--navy-dk) 0%, var(--navy) 100%);
+      color: #fff;
+      padding: 52px 24px 44px;
+      text-align: center;
+    }
+
+    .blocks {
+      display: flex;
+      justify-content: center;
+      gap: 6px;
+      margin-bottom: 22px;
+    }
+    .blocks span {
+      display: block;
+      width: 18px;
+      height: 18px;
+      border-radius: 4px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.18);
+      border-radius: 999px;
+      padding: 4px 16px;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 11.5px;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      color: rgba(255,255,255,0.75);
+      margin-bottom: 18px;
+    }
+
+    header h1 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(30px, 6vw, 46px);
+      font-weight: 700;
+      line-height: 1.12;
+      margin-bottom: 10px;
+    }
+    header h1 em {
+      font-style: normal;
+      color: var(--c-amber);
+    }
+
+    header p {
+      color: rgba(255,255,255,0.5);
+      font-size: 13.5px;
+    }
+
+    /* ── Main layout ── */
+    main {
+      max-width: 740px;
+      margin: 0 auto;
+      padding: 40px 20px 72px;
+    }
+
+    /* ── Section cards ── */
+    .card {
+      background: var(--surface);
+      border-radius: 14px;
+      padding: 30px 34px;
+      margin-bottom: 14px;
+      border-left: 4px solid var(--navy);
+      box-shadow: 0 1px 4px rgba(28,38,116,0.07);
+    }
+
+    .card:nth-child(1) { border-left-color: var(--c-blue);   }
+    .card:nth-child(2) { border-left-color: var(--c-red);    }
+    .card:nth-child(3) { border-left-color: var(--c-amber);  }
+    .card:nth-child(4) { border-left-color: var(--c-teal);   }
+    .card:nth-child(5) { border-left-color: var(--c-purple); }
+    .card:nth-child(6) { border-left-color: var(--c-red);    }
+
+    .sec-label {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--muted);
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+
+    .card h2 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--navy-dk);
+      margin-bottom: 14px;
+      line-height: 1.25;
+    }
+
+    .card p {
+      color: var(--text);
+      font-size: 15px;
+      max-width: 64ch;
+      margin-bottom: 12px;
+    }
+    .card p:last-child { margin-bottom: 0; }
+
+    /* ── Policy lists ── */
+    ul.plist {
+      list-style: none;
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 11px;
+    }
+
+    ul.plist li {
+      display: flex;
+      gap: 11px;
+      align-items: flex-start;
+      font-size: 15px;
+      color: var(--text);
+    }
+
+    ul.plist li .sq {
+      flex-shrink: 0;
+      width: 9px;
+      height: 9px;
+      border-radius: 2px;
+      margin-top: 7px;
+    }
+
+    ul.plist li strong {
+      font-weight: 600;
+      color: var(--navy-dk);
+    }
+
+    /* ── Links ── */
+    a { color: var(--c-blue); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .note-links {
+      margin-top: 16px;
+      font-size: 13.5px;
+      color: var(--muted);
+    }
+
+    /* ── Contact box ── */
+    .contact-box {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--navy);
+      border-radius: 10px;
+      padding: 14px 20px;
+      margin-top: 14px;
+      color: #fff;
+      font-size: 15px;
+    }
+    .contact-box a {
+      color: var(--c-amber);
+      font-weight: 500;
+    }
+    .envelope {
+      font-size: 18px;
+      line-height: 1;
+    }
+
+    /* ── Footer ── */
+    footer {
+      background: var(--navy-dk);
+      color: rgba(255,255,255,0.4);
+      text-align: center;
+      font-size: 13px;
+      padding: 26px 20px;
+    }
+    footer strong { color: rgba(255,255,255,0.7); }
+
+    /* ── Responsive ── */
+    @media (max-width: 540px) {
+      .card { padding: 22px 18px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ─── Header ─── -->
+<header>
+  <div class="blocks">
+    <span style="background:var(--c-red)"></span>
+    <span style="background:var(--c-amber)"></span>
+    <span style="background:var(--c-teal)"></span>
+    <span style="background:var(--c-purple)"></span>
+    <span style="background:var(--c-blue)"></span>
+  </div>
+  <div class="tag">Privacy Policy</div>
+  <h1>Block <em>Rush!</em></h1>
+  <p>Last Updated: September 2026</p>
+</header>
+
+<!-- ─── Content ─── -->
+<main>
+
+  <!-- 1. Introduction -->
+  <div class="card">
+    <div class="sec-label">Section 01</div>
+    <h2>Introduction</h2>
+    <p>Welcome to <strong>Block Rush!</strong> We are dedicated to protecting your privacy and ensuring you have a safe, enjoyable, and positive experience while playing our game. This Privacy Policy explains how we handle and safeguard information when you install and play Block Rush! on your mobile device.</p>
+    <p>By downloading, installing, or playing the game, you agree to the practices described in this Privacy Policy. If you do not agree with this policy, please do not use the application.</p>
+  </div>
+
+  <!-- 2. Information We Collect -->
+  <div class="card">
+    <div class="sec-label">Section 02</div>
+    <h2>Information We Collect</h2>
+    <p>We respect your privacy and collect only what is strictly necessary to run the game:</p>
+    <ul class="plist">
+      <li>
+        <span class="sq" style="background:var(--c-red)"></span>
+        <div><strong>No Personal Information:</strong> We do not collect names, email addresses, phone numbers, location, contacts, or photos. No account or login is required.</div>
+      </li>
+      <li>
+        <span class="sq" style="background:var(--c-amber)"></span>
+        <div><strong>Local Storage Only:</strong> Your high scores, sound, music, and vibration settings are saved only on your device. This data is never sent to any server and is removed if you uninstall the app.</div>
+      </li>
+      <li>
+        <span class="sq" style="background:var(--c-teal)"></span>
+        <div><strong>No In-App Purchases:</strong> The game is 100% free with no paid items, subscriptions, or financial transactions.</div>
+      </li>
+      <li>
+        <span class="sq" style="background:var(--c-purple)"></span>
+        <div><strong>Technical &amp; Diagnostics Data:</strong> Our advertising partner (Google AdMob) may automatically process basic non-personal technical data — such as device model, OS version, and crash logs — to display ads and keep the app running reliably.</div>
+      </li>
+    </ul>
+  </div>
+
+  <!-- 3. Advertising -->
+  <div class="card">
+    <div class="sec-label">Section 03</div>
+    <h2>Advertising (Google AdMob)</h2>
+    <p>To keep the game free, we display advertisements via <strong>Google AdMob</strong>. Because our game is designed for players aged 3 and above:</p>
+    <ul class="plist">
+      <li>
+        <span class="sq" style="background:var(--c-amber)"></span>
+        <div><strong>Child-Directed Treatment:</strong> All ad requests are marked as child-directed in compliance with COPPA and Google Play Families Policy.</div>
+      </li>
+      <li>
+        <span class="sq" style="background:var(--c-amber)"></span>
+        <div><strong>G-Rated Content Only:</strong> All ads are restricted to general, family-safe audiences (MaxAdContentRating: G).</div>
+      </li>
+      <li>
+        <span class="sq" style="background:var(--c-amber)"></span>
+        <div><strong>Non-Personalized Ads:</strong> We only serve contextual ads. We do not allow personalized ads, behavioral tracking, or user profiling.</div>
+      </li>
+      <li>
+        <span class="sq" style="background:var(--c-amber)"></span>
+        <div><strong>No Advertising ID:</strong> We have explicitly removed the Android Advertising ID (AD_ID) permission from our app.</div>
+      </li>
+    </ul>
+    <p class="note-links">
+      For more information, see the
+      <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a>
+      and
+      <a href="https://support.google.com/admob/answer/6223431" target="_blank">Google Families Ad Policy</a>.
+    </p>
+  </div>
+
+  <!-- 4. Children's Privacy -->
+  <div class="card">
+    <div class="sec-label">Section 04</div>
+    <h2>Children's Privacy</h2>
+    <p>Protecting young players and family privacy is our top priority:</p>
+    <ul class="plist">
+      <li>
+        <span class="sq" style="background:var(--c-teal)"></span>
+        <div>The game strictly adheres to the <strong>Children's Online Privacy Protection Act (COPPA)</strong> and the <strong>Google Play Families Policy</strong>.</div>
+      </li>
+      <li>
+        <span class="sq" style="background:var(--c-teal)"></span>
+        <div>We do not knowingly collect any personal data from children under 13 (or any user).</div>
+      </li>
+      <li>
+        <span class="sq" style="background:var(--c-teal)"></span>
+        <div>The game contains <strong>no chat, no social media links, and no external web links</strong>.</div>
+      </li>
+      <li>
+        <span class="sq" style="background:var(--c-teal)"></span>
+        <div>Parents and guardians can contact us at any time with questions or to request the deletion of any data.</div>
+      </li>
+    </ul>
+  </div>
+
+  <!-- 5. Data Deletion -->
+  <div class="card">
+    <div class="sec-label">Section 05</div>
+    <h2>Data Deletion</h2>
+    <p>Because all game data (scores and settings) is stored locally on your device, you can delete it at any time by clearing the app's cache or storage in your device settings, or by uninstalling the app.</p>
+  </div>
+
+  <!-- 6. Contact Us -->
+  <div class="card">
+    <div class="sec-label">Section 06</div>
+    <h2>Contact Us</h2>
+    <p>If you have any questions or concerns about this Privacy Policy, please reach out — we're happy to help.</p>
+    <div class="contact-box">
+      <span class="envelope">✉️</span>
+      <a href="mailto:viveknakrani.dev@gmail.com">viveknakrani.dev@gmail.com</a>
+    </div>
+  </div>
+
+</main>
+
+<!-- ─── Footer ─── -->
+<footer>
+  <strong>© 2026 Block Rush!</strong> &nbsp;·&nbsp; All rights reserved &nbsp;·&nbsp; Privacy Policy
+</footer>
+
+</body>
+</html>
